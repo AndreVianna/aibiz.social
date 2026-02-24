@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="AiBiz.Domain/AiBiz.Domain.csproj" />
+  <Project Path="AiBiz.Infrastructure/AiBiz.Infrastructure.csproj" />
+  <Project Path="AiBiz.Tests/AiBiz.Tests.csproj" />
+  <Project Path="AiBiz.Web/AiBiz.Web.csproj" />
+</Solution>
