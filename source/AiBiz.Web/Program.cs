@@ -1,4 +1,5 @@
 using System.Text.Json;
+using AiBiz.Infrastructure;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 
@@ -6,6 +7,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 // ── Razor Pages ───────────────────────────────────────────────────────────────
 builder.Services.AddRazorPages();
+
+// ── Infrastructure (EF Core + PostgreSQL + services) ─────────────────────────
+builder.Services.AddInfrastructure(builder.Configuration);
 
 // ── Health Checks ─────────────────────────────────────────────────────────────
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");

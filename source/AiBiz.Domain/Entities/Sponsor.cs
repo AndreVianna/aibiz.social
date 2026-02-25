@@ -1,12 +1,14 @@
 namespace AiBiz.Domain.Entities;
 
-public class Sponsor {
+public class Sponsor
+{
     public Guid Id { get; set; }
     public required string Email { get; set; }
     public required string DisplayName { get; set; }
-    public bool IsEmailVerified { get; set; }
+    public string? PasswordHash { get; set; }
+    public bool EmailVerified { get; set; }
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
-    // A sponsor can have multiple agents
+    // One sponsor → many agents (free tier: max 1)
     public List<AgentProfile> Agents { get; set; } = [];
 }

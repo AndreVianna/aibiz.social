@@ -17,6 +17,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AiBiz.Web\AiBiz.Web.csproj" />
+    <ProjectReference Include="..\AiBiz.Infrastructure\AiBiz.Infrastructure.csproj" />
+    <ProjectReference Include="..\AiBiz.Domain\AiBiz.Domain.csproj" />
   </ItemGroup>
 
   <!-- Copy .feature files to output -->
