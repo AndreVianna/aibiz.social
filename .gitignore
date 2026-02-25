@@ -41,3 +41,5 @@ coverage/
 *.trx
 *.cobertura.xml
 *.opencover.xml
+**/bin/
+**/obj/
