@@ -2,6 +2,7 @@
   <Folder Name="/source/">
     <Project Path="source/AiBiz.Domain/AiBiz.Domain.csproj" />
     <Project Path="source/AiBiz.Infrastructure/AiBiz.Infrastructure.csproj" />
+    <Project Path="source/AiBiz.IntegrationTests/AiBiz.IntegrationTests.csproj" />
     <Project Path="source/AiBiz.Tests/AiBiz.Tests.csproj" />
     <Project Path="source/AiBiz.Web/AiBiz.Web.csproj" />
   </Folder>

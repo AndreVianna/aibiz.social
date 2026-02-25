@@ -1,0 +1,15 @@
+**/.git
+**/.gitignore
+**/.vs
+**/.vscode
+**/.idea
+**/bin
+**/obj
+**/TestResults
+**/coverage
+docker-compose.override.yml
+.env
+*.md
+documents/
+node_modules/
+wwwroot/css/output.css

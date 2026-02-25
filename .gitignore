@@ -5,8 +5,12 @@ obj/
 *.suo
 *.cache
 *.log
-*.vs/
+.vs/
+*.vsidx
+
+## IDE
 .idea/
+.vscode/
 
 ## OS
 .DS_Store
@@ -17,3 +21,23 @@ Thumbs.db
 appsettings.*.json
 !appsettings.json
 !appsettings.Development.json
+
+## Docker
+docker-compose.override.yml
+
+## Node / npm
+node_modules/
+package-lock.json
+
+## Tailwind (generated output)
+wwwroot/css/output.css
+
+## Reqnroll (auto-generated from .feature files)
+*.feature.cs
+
+## Test results
+TestResults/
+coverage/
+*.trx
+*.cobertura.xml
+*.opencover.xml

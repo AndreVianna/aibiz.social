@@ -1,0 +1,19 @@
+# Copy this file to docker-compose.override.yml and customise for local dev.
+# docker-compose.override.yml is gitignored — safe to put secrets here.
+
+name: aibiz
+
+services:
+  app:
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      # Override DB password for local dev
+      ConnectionStrings__DefaultConnection: >-
+        Host=db;Port=5432;Database=aibiz;Username=aibiz;Password=change_me_locally
+
+  db:
+    environment:
+      POSTGRES_PASSWORD: change_me_locally
+    ports:
+      # Expose DB on a non-standard port to avoid conflicts
+      - "15432:5432"
